@@ -7,14 +7,11 @@
    --secondary-color: #1e1e1e;
    --dark-gray-color: #545454;
    --gray-color: #696969;
+   --screen-bg: #f9fafb7a;
    --light-bg: #fcfcfc;
    --gray-border1: #d9d9d9;
    --gray-border2: #e8e8e8;
-   --heading-gradient: linear-gradient(
-      349.41deg,
-      #27300e 10.45%,
-      #a8e202 72.28%
-   );
+   --heading-gradient: linear-gradient(-1deg, #27300e 10.45%, #a8e202 72.28%);
    --primary-gradient-btn: linear-gradient(180deg, #c2ff0f 0%, #a3db00 100%);
    --box-shadow1: 0px 4px 18.8px 0px #b8f30a26;
    --box-shadow2: 0px 4px 41px 0px #aeea0038;
@@ -38,6 +35,57 @@ body {
    min-height: 100vh;
    font-size: 1rem;
    font-family: "Inter", sans-serif;
+}
+
+/* Common CSS */
+.screen-bg {
+   background-color: var(--screen-bg);
+}
+
+.blur-lines-bg {
+   background-image: url(../img/line-bg-blur.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   -webkit-backdrop-filter: blur(5px);
+   backdrop-filter: blur(5px);
+}
+
+.login-form {
+   padding: 56px 72px;
+   border: 1px solid var(--light-primary-color);
+}
+
+.main-heading {
+   font-size: var(--main-heading);
+   background: var(--heading-gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.bg-effect-left,
+.bg-effect-right {
+   background: linear-gradient(
+      270deg,
+      #faffeb 6.25%,
+      #aeea00 51.44%,
+      #f5ffd6 94.71%
+   );
+
+   width: 514px;
+   height: 224px;
+   position: absolute;
+   top: 0;
+   transform: rotate(-114deg);
+   filter: blur(180px);
+}
+
+.bg-effect-left {
+   left: 0;
+}
+
+.bg-effect-right {
+   right: 0;
 }
 
 #page-loader.fade-out {
