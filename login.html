@@ -11,20 +11,105 @@
    </head>
    <body>
       <div
-         class="min-vh-100 screen-bg blur-lines-bg d-flex align-items-center justify-content-center position-relative overflow-x-hidden"
+         class="min-vh-100 screen-bg blur-lines-bg d-flex align-items-center justify-content-center position-relative overflow-x-hidden p-4"
       >
          <div class="col-6 mx-auto z-1 position-relative">
             <div class="login-form bg-white rounded-4">
                <h1 class="main-heading fw-bold text-center">Welcome Back</h1>
+               <p class="text-center text-secondary fs-5">
+                  Login to access your GPU dashboard
+               </p>
+
+               <form class="mt-5">
+                  <div class="mb-3">
+                     <label for="email" class="form-label mb-1">Email</label>
+                     <input
+                        type="email"
+                        class="form-control input-h"
+                        id="email"
+                     />
+                  </div>
+
+                  <div class="mb-3">
+                     <label for="password" class="form-label mb-1"
+                        >Password</label
+                     >
+                     <div class="position-relative">
+                        <input
+                           type="password"
+                           class="form-control input-h pe-5"
+                           id="password"
+                        />
+                        <button
+                           type="button"
+                           class="btn p-0 border-0 show-password"
+                        >
+                           <img
+                              src="./img/icon/ic-eye-open.svg"
+                              alt="Eye Icon"
+                           />
+                        </button>
+                     </div>
+                  </div>
+
+                  <a
+                     href="#"
+                     class="primary-text fs-18 fw-medium w-fit ms-auto d-block"
+                     >Forgot Password?
+                  </a>
+
+                  <button
+                     type="button"
+                     class="btn fw-semibold mt-32 w-100 primary-btn-lg"
+                  >
+                     Log In
+                  </button>
+
+                  <div class="fs-18 text-secondary my-5">
+                     <div class=""></div>
+                     Or Continue With
+                     <div class=""></div>
+                  </div>
+
+                  <div class="row">
+                     <div class="col-6">
+                        <div
+                           class="fw-medium border py-3 rounded-12 d-flex gap-2 align-items-center px-4 justify-content-center"
+                        >
+                           <img
+                              src="./img/icon/ic-google.svg"
+                              alt="Google Icon"
+                           />
+                           Continue with Google
+                        </div>
+                     </div>
+
+                     <div class="col-6">
+                        <div
+                           class="fw-medium border py-3 rounded-12 d-flex gap-2 align-items-center px-4 justify-content-center"
+                        >
+                           <img
+                              src="./img/icon/ic-apple.svg"
+                              alt="Apple Icon"
+                           />
+                           Continue with Apple
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="fs-18 text-center mt-5">
+                     Don’t have an account?
+                     <a
+                        href="#"
+                        class="primary-text fw-medium text-decoration-none"
+                        >Sign Up</a
+                     >
+                  </div>
+               </form>
             </div>
          </div>
 
-         <!-- <img
-            src="./img/bg-effect-left.svg"
-            alt="Bg Effect"
-            class="position-absolute top-0 start-0 test"
-         /> -->
-
+         <!-- Background Effect Shapes -->
          <div class="bg-effect-left"></div>
          <div class="bg-effect-right"></div>
       </div>
