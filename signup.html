@@ -17,24 +17,48 @@
             class="col-xxl-6 col-lg-8 col-md-10 mx-auto z-1 position-relative"
          >
             <div class="login-form bg-white rounded-4">
-               <h1 class="main-heading fw-bold text-center">Welcome Back</h1>
+               <h1 class="main-heading fw-bold text-center">
+                  Create Your Account
+               </h1>
                <p class="text-center text-secondary fs-20">
-                  Login to access your GPU dashboard
+                  Join Mottif AI and start earning passive GPU-based income
+                  today.
                </p>
 
                <form class="mt-5">
                   <div class="mb-3">
-                     <label for="email" class="form-label mb-1">Email</label>
-                     <input
-                        type="email"
-                        class="form-control input-h"
-                        id="email"
-                     />
+                     <label for="fname" class="form-label mb-1"
+                        >Full Name</label
+                     >
+                     <div class="input-icon position-relative">
+                        <input
+                           type="text"
+                           class="form-control input-h"
+                           id="fname"
+                        />
+
+                        <img src="./img/icon/ic-user.svg" alt="User Icon" />
+                     </div>
                   </div>
 
                   <div class="mb-3">
+                     <label for="email" class="form-label mb-1"
+                        >Email Address</label
+                     >
+                     <div class="input-icon position-relative">
+                        <input
+                           type="email"
+                           class="form-control input-h"
+                           id="email"
+                        />
+
+                        <img src="./img/icon/ic-mail.svg" alt="Mail Icon" />
+                     </div>
+                  </div>
+
+                  <div>
                      <label for="password" class="form-label mb-1"
-                        >Password</label
+                        >Create Password</label
                      >
                      <div class="position-relative">
                         <input
@@ -54,17 +78,23 @@
                      </div>
                   </div>
 
-                  <a
-                     href="#"
-                     class="primary-text fs-18 fw-medium w-fit ms-auto d-block"
-                     >Forgot Password?
-                  </a>
+                  <div class="form-check mt-32">
+                     <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="checkDefault"
+                     />
+                     <label class="form-check-label" for="checkDefault">
+                        I agree to the Terms of Use and Privacy Policy
+                     </label>
+                  </div>
 
                   <button
                      type="button"
                      class="btn fw-semibold mt-32 w-100 primary-btn-lg"
                   >
-                     Log In
+                     Sign Up
                   </button>
 
                   <div
@@ -110,11 +140,12 @@
                   </div>
 
                   <div class="fs-18 text-center mt-sm-5 mt-4">
-                     Don’t have an account?
+                     Already have an account?
                      <a
-                        href="./signup.html"
+                        href="./login.html"
                         class="primary-text fw-medium text-decoration-none"
-                        >Sign Up</a
+                     >
+                        Log In</a
                      >
                   </div>
                </form>

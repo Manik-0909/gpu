@@ -9,8 +9,202 @@
       <link rel="stylesheet" href="./css/style.css" />
       <title>GPU</title>
    </head>
-   <body>
-      Hello There!!!
+   <body class="screen-bg">
+      <!-- Header Section Start -->
+      <div class="max-w px-sm-4 px-3 position-sticky top-0 z-3">
+         <header class="bg-white rounded-12 border mt-sm-4 mt-3">
+            <nav class="navbar navbar-expand-md">
+               <div class="container-fluid">
+                  <a class="navbar-brand fw-bold fs-2 primary-text" href="#"
+                     >LOGO</a
+                  >
+                  <button
+                     class="navbar-toggler border-0 shadow-none p-0"
+                     type="button"
+                     data-bs-toggle="offcanvas"
+                     data-bs-target="#offcanvasNavbar"
+                     aria-controls="offcanvasNavbar"
+                     aria-label="Toggle navigation"
+                  >
+                     <img
+                        src="./img/icon/ic-toggle-menu.svg"
+                        alt="Toggle Menu Icon"
+                        style="width: 24px"
+                     />
+                  </button>
+                  <div
+                     class="offcanvas offcanvas-end"
+                     tabindex="-1"
+                     id="offcanvasNavbar"
+                     aria-labelledby="offcanvasNavbarLabel"
+                  >
+                     <div class="offcanvas-header pb-0">
+                        <h5
+                           class="offcanvas-title fw-bold fs-2 primary-text"
+                           id="offcanvasNavbarLabel"
+                        >
+                           LOGO
+                        </h5>
+                        <button
+                           type="button"
+                           class="btn-close border-0 shadow-none"
+                           data-bs-dismiss="offcanvas"
+                           aria-label="Close"
+                        ></button>
+                     </div>
+                     <div class="offcanvas-body">
+                        <ul
+                           class="navbar-nav justify-content-md-center align-items-md-center flex-grow-1 gap-lg-4 gap-md-3"
+                        >
+                           <li class="nav-item pe-lg-2">
+                              <a
+                                 class="nav-link active"
+                                 aria-current="page"
+                                 href="./index.html"
+                                 >Home</a
+                              >
+                           </li>
+                           <li class="nav-item pe-lg-2">
+                              <a class="nav-link" href="#">Catalogue</a>
+                           </li>
+                           <li class="nav-item pe-lg-2">
+                              <a class="nav-link" href="#">About</a>
+                           </li>
+                           <li class="nav-item pe-lg-2">
+                              <a class="nav-link" href="#">FAQ</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Help</a>
+                           </li>
+                        </ul>
+                        <form
+                           class="d-flex align-items-center gap-3 text-nowrap mt-md-0 mt-4"
+                        >
+                           <a
+                              href="./login.html"
+                              type="button"
+                              class="btn fw-semibold w-100 white-btn border rounded-12 px-4"
+                           >
+                              Log In
+                           </a>
+                           <a
+                              href="./signup.html"
+                              type="button"
+                              class="btn fw-semibold w-100 primary-btn px-4"
+                           >
+                              Sign Up
+                           </a>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </header>
+      </div>
+      <!-- Header Section End -->
+
+      <!-- Hero Section Start -->
+      <div class="overflow-x-hidden position-relative min-vh-100">
+         <section class="mt-5 pt-lg-5 pt-md-3 max-w p-sm-4 p-3">
+            <div
+               class="fs-20 text-secondary d-flex align-items-center justify-content-center gap-2"
+            >
+               <img
+                  src="./img/icon/hero-users.svg"
+                  alt="User Img"
+                  class="img-fluid"
+               />
+               Trusted by 5000+ remote teams
+            </div>
+
+            <div class="col-sm-8 mx-auto">
+               <h1
+                  class="main-heading fw-bold text-center mt-md-3 mt-2 mb-md-2 mb-1"
+               >
+                  Rent High-Performance GPUs. Earn Monthly Returns.
+               </h1>
+
+               <p class="text-center text-secondary fs-20">
+                  Start earning passive income through our secure, server-hosted
+                  GPU plans.
+               </p>
+            </div>
+
+            <div
+               class="mt-md-5 mt-32 d-flex justify-content-center align-items-center gap-2"
+            >
+               <button
+                  type="button"
+                  class="btn fw-semibold fs-18 white-btn border rounded-12 px-sm-5 px-4 bg-transparent"
+               >
+                  Start Earning
+               </button>
+
+               <button
+                  type="button"
+                  class="btn fw-semibold primary-btn-md px-sm-5 px-4"
+               >
+                  View Plans
+               </button>
+            </div>
+
+            <img
+               src="./img/home-hero-bg.png"
+               alt="Hero Banner Image"
+               class="w-100 img-fluid mt-5 pt-md-4"
+            />
+         </section>
+
+         <!-- Background Effect Shapes -->
+         <div class="bg-effect-left top-50" style="z-index: -1"></div>
+         <div class="bg-effect-right top-50" style="z-index: -1"></div>
+      </div>
+      <!-- Hero Section End -->
+
+      <!-- How It Works Section Start -->
+      <section class="section-py lines-bg">
+         <div class="max-w p-sm-4 p-3">
+            <h2 class="fw-semibold sub-heading2 text-center mb-sm-5 mb-4">
+               How It Works
+            </h2>
+
+            <div class="row">
+               <div class="col-4">
+                  <div class="border rounded-12 p-5 light-bg text-center">
+                     <img src="./img/icon/ic-plant.svg" alt="Plant Icon" />
+                     <h5 class="fs-24 py-1 mt-2 mb-3">Rent a GPU Plan</h5>
+                     <p class="text-secondary mb-0">
+                        Choose your desired GPU plan.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="col-4">
+                  <div class="border rounded-12 p-5 light-bg text-center">
+                     <img src="./img/icon/ic-server.svg" alt="Server Icon" />
+                     <h5 class="fs-24 py-1 mt-2 mb-3">We Handle the Setup</h5>
+                     <p class="text-secondary mb-0">
+                        Instant start on our mining servers.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="col-4">
+                  <div class="border rounded-12 p-5 light-bg text-center">
+                     <img
+                        src="./img/icon/ic-arcticons.svg"
+                        alt="Arcticons Icon"
+                     />
+                     <h5 class="fs-24 py-1 mt-2 mb-3">Earn Monthly</h5>
+                     <p class="text-secondary mb-0">
+                        Get passive income payouts monthly.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- How It Works Section End -->
 
       <!-- Page Loader Start -->
       <!-- <div
