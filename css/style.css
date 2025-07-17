@@ -238,7 +238,7 @@ details > summary {
    transform: translate(-50%, 0);
 }
 
-.primary .white-btn {
+.white-btn {
    padding-block: 12px;
    background: var(--white-color);
 }
@@ -312,6 +312,22 @@ header .nav-item .nav-link.active {
 
 .primary-bg {
    background-color: var(--primary-color);
+}
+
+.accordion-button::after {
+   background: url(../img/icon/ic-accordion.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.accordion-button:not(.collapsed)::after {
+   background: url(../img/icon/ic-accordion1.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.accordion {
+   --bs-accordion-btn-icon-transform: 0;
 }
 
 #page-loader.fade-out {
