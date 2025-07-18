@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Bootstrap CSS File -->
+      <link rel="stylesheet" href="./css/bootstrap.min.css" />
+      <!-- Custom CSS File -->
+      <link rel="stylesheet" href="./css/style.css" />
+      <title>GPU</title>
+   </head>
+   <body class="screen-bg">
+      <!-- Header Section Start -->
+      <div class="max-w px-sm-4 px-3 position-sticky top-0 z-3">
+         <header class="bg-white z-3 rounded-12 border mt-sm-4 mt-3">
+            <nav class="navbar navbar-expand-md">
+               <div class="container-fluid">
+                  <a class="navbar-brand fw-bold fs-2 primary-text" href="#"
+                     >LOGO</a
+                  >
+                  <button
+                     class="navbar-toggler border-0 shadow-none p-0"
+                     type="button"
+                     data-bs-toggle="offcanvas"
+                     data-bs-target="#offcanvasNavbar"
+                     aria-controls="offcanvasNavbar"
+                     aria-label="Toggle navigation"
+                  >
+                     <img
+                        src="./img/icon/ic-toggle-menu.svg"
+                        alt="Toggle Menu Icon"
+                        style="width: 24px"
+                     />
+                  </button>
+                  <div
+                     class="offcanvas offcanvas-end"
+                     tabindex="-1"
+                     id="offcanvasNavbar"
+                     aria-labelledby="offcanvasNavbarLabel"
+                  >
+                     <div class="offcanvas-header pb-0">
+                        <h5
+                           class="offcanvas-title fw-bold fs-2 primary-text"
+                           id="offcanvasNavbarLabel"
+                        >
+                           LOGO
+                        </h5>
+                        <button
+                           type="button"
+                           class="btn-close border-0 shadow-none"
+                           data-bs-dismiss="offcanvas"
+                           aria-label="Close"
+                        ></button>
+                     </div>
+                     <div class="offcanvas-body">
+                        <ul
+                           class="navbar-nav justify-content-md-center align-items-md-center flex-grow-1 gap-lg-4 gap-md-3"
+                        >
+                           <li class="nav-item pe-lg-2">
+                              <a
+                                 class="nav-link"
+                                 aria-current="page"
+                                 href="./index.html"
+                                 >Home</a
+                              >
+                           </li>
+                           <li class="nav-item pe-lg-2">
+                              <a class="nav-link" href="#">Catalogue</a>
+                           </li>
+                           <li class="nav-item pe-lg-2">
+                              <a class="nav-link" href="./about-us.html"
+                                 >About</a
+                              >
+                           </li>
+                           <li class="nav-item pe-lg-2">
+                              <a class="nav-link" href="./faq.html">FAQ</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link active" href="./help.html"
+                                 >Help</a
+                              >
+                           </li>
+                        </ul>
+                        <form
+                           class="d-flex align-items-center gap-3 text-nowrap mt-md-0 mt-4"
+                        >
+                           <a
+                              href="./login.html"
+                              type="button"
+                              class="btn fw-semibold w-100 white-btn border rounded-12 px-4"
+                           >
+                              Log In
+                           </a>
+                           <a
+                              href="./signup.html"
+                              type="button"
+                              class="btn fw-semibold w-100 primary-btn px-4"
+                           >
+                              Sign Up
+                           </a>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </header>
+      </div>
+      <!-- Header Section End -->
+
+      <div
+         class="overflow-hidden blur-lines-bg position-relative"
+         style="background-position-y: -8%"
+      >
+         <!-- Hero Section Start -->
+         <section class="mt-5 pt-lg-5 pt-md-3 max-w p-sm-4 p-3">
+            <div class="col-sm-8 mx-auto">
+               <h1
+                  class="main-heading fw-bold text-center mt-md-3 mt-2 mb-md-2 mb-1"
+               >
+                  Need Help? We've Got You Covered.
+               </h1>
+
+               <p class="text-center text-secondary fs-20">
+                  Browse our help options or contact our support team directly —
+                  we're always here for you.
+               </p>
+            </div>
+         </section>
+         <!-- Hero Section End -->
+
+         <!-- Quick Support Options Section Start -->
+         <section class="section-py">
+            <div class="max-w px-sm-4 px-3">
+               <h2 class="fw-semibold sub-heading2 text-center mb-md-5 mb-4">
+                  Quick Support Options
+               </h2>
+
+               <div class="row gy-4 justify-content-center">
+                  <div class="col-md-5 col-sm-6 d-grid">
+                     <div
+                        class="border rounded-12 p-lg-5 p-4 white-bg text-center d-flex align-items-center flex-column justify-content-between"
+                     >
+                        <div>
+                           <img
+                              src="./img/icon/ic-target.svg"
+                              alt="Target Icon"
+                              class="img-fluid mb-4"
+                           />
+
+                           <h5 class="fs-24 fw-bold">Live Chat Support</h5>
+                           <p class="text-secondary fs-18 mb-4">
+                              Talk to our team in real-time. Available 24/7 for
+                              urgent queries.
+                           </p>
+                        </div>
+
+                        <button
+                           type="button"
+                           class="btn fw-semibold px-5 primary-btn-lg"
+                        >
+                           Start Live Chat
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="col-md-5 col-sm-6 d-grid">
+                     <div
+                        class="border rounded-12 p-lg-5 p-4 white-bg text-center d-flex align-items-center flex-column justify-content-between"
+                     >
+                        <div>
+                           <img
+                              src="./img/icon/ic-target.svg"
+                              alt="Target Icon"
+                              class="img-fluid mb-4"
+                           />
+
+                           <h5 class="fs-24 fw-bold">Email Support</h5>
+                           <p class="text-secondary fs-18 mb-4">
+                              Prefer email? Reach us at support@web.ai
+                           </p>
+                        </div>
+
+                        <button
+                           type="button"
+                           class="btn fw-semibold px-5 primary-btn-lg"
+                        >
+                           Send Email
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="col-md-5 col-sm-6 d-grid">
+                     <div
+                        class="border rounded-12 p-lg-5 p-4 white-bg text-center d-flex align-items-center flex-column justify-content-between"
+                     >
+                        <div>
+                           <img
+                              src="./img/icon/ic-target.svg"
+                              alt="Target Icon"
+                              class="img-fluid mb-4"
+                           />
+
+                           <h5 class="fs-24 fw-bold">Tutorials & Guides</h5>
+                           <p class="text-secondary fs-18 mb-4">
+                              Step-by-step instructions and platform walk
+                              throughs.
+                           </p>
+                        </div>
+
+                        <button
+                           type="button"
+                           class="btn fw-semibold px-5 primary-btn-lg"
+                        >
+                           View Tutorials
+                        </button>
+                     </div>
+                  </div>
+
+                  <div class="col-md-5 col-sm-6 d-grid">
+                     <div
+                        class="border rounded-12 p-lg-5 p-4 white-bg text-center d-flex align-items-center flex-column justify-content-between"
+                     >
+                        <div>
+                           <img
+                              src="./img/icon/ic-target.svg"
+                              alt="Target Icon"
+                              class="img-fluid mb-4"
+                           />
+
+                           <h5 class="fs-24 fw-bold">Submit a Ticket</h5>
+                           <p class="text-secondary fs-18 mb-4">
+                              Can't find your issue? Fill out a support form and
+                              we'll respond shortly.
+                           </p>
+                        </div>
+
+                        <button
+                           type="button"
+                           class="btn fw-semibold px-5 primary-btn-lg"
+                        >
+                           Submit Ticket
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Quick Support Options Section End -->
+
+         <!-- Background Effect Shapes -->
+         <div class="bg-effect-left top-50" style="z-index: -1"></div>
+         <div class="bg-effect-right top-50" style="z-index: -1"></div>
+      </div>
+
+      <!-- Popular Help Topics Section Start -->
+      <section class="section-py pt-0 blur-lines-bg">
+         <div class="max-w px-sm-4 px-3">
+            <h2 class="fw-semibold sub-heading2 text-center mb-md-5 mb-4">
+               Popular Help Topics
+            </h2>
+
+            <div class="row gy-4">
+               <div class="col-sm-6 d-grid">
+                  <div
+                     class="border rounded-12 py-lg-4 py-3 px-3 bg-light d-flex gap-3 align-items-center justify-content-between"
+                  >
+                     <h6 class="fs-18 mb-0">How do I deposit funds?</h6>
+                     <button class="btn p-0 border-0">
+                        <img
+                           src="./img/icon/ic-right-arrow-lg.svg"
+                           alt="Right Arrow"
+                        />
+                     </button>
+                  </div>
+               </div>
+
+               <div class="col-sm-6 d-grid">
+                  <div
+                     class="border rounded-12 py-lg-4 py-3 px-3 bg-light d-flex gap-3 align-items-center justify-content-between"
+                  >
+                     <h6 class="fs-18 mb-0">How are earnings calculated?</h6>
+                     <button class="btn p-0 border-0">
+                        <img
+                           src="./img/icon/ic-right-arrow-lg.svg"
+                           alt="Right Arrow"
+                        />
+                     </button>
+                  </div>
+               </div>
+
+               <div class="col-sm-6 d-grid">
+                  <div
+                     class="border rounded-12 py-lg-4 py-3 px-3 bg-light d-flex gap-3 align-items-center justify-content-between"
+                  >
+                     <h6 class="fs-18 mb-0">How to rent multiple servers?</h6>
+                     <button class="btn p-0 border-0">
+                        <img
+                           src="./img/icon/ic-right-arrow-lg.svg"
+                           alt="Right Arrow"
+                        />
+                     </button>
+                  </div>
+               </div>
+
+               <div class="col-sm-6 d-grid">
+                  <div
+                     class="border rounded-12 py-lg-4 py-3 px-3 bg-light d-flex gap-3 align-items-center justify-content-between"
+                  >
+                     <h6 class="fs-18 mb-0">
+                        What to do if my GPU is offline?
+                     </h6>
+                     <button class="btn p-0 border-0">
+                        <img
+                           src="./img/icon/ic-right-arrow-lg.svg"
+                           alt="Right Arrow"
+                        />
+                     </button>
+                  </div>
+               </div>
+
+               <div class="col-sm-6 d-grid">
+                  <div
+                     class="border rounded-12 py-lg-4 py-3 px-3 bg-light d-flex gap-3 align-items-center justify-content-between"
+                  >
+                     <h6 class="fs-18 mb-0">
+                        How to optimize GPU performance?
+                     </h6>
+                     <button class="btn p-0 border-0">
+                        <img
+                           src="./img/icon/ic-right-arrow-lg.svg"
+                           alt="Right Arrow"
+                        />
+                     </button>
+                  </div>
+               </div>
+
+               <div class="col-sm-6 d-grid">
+                  <div
+                     class="border rounded-12 py-lg-4 py-3 px-3 bg-light d-flex gap-3 align-items-center justify-content-between"
+                  >
+                     <h6 class="fs-18 mb-0">Explore All Help Articles</h6>
+                     <button class="btn p-0 border-0">
+                        <img
+                           src="./img/icon/ic-right-arrow-lg.svg"
+                           alt="Right Arrow"
+                        />
+                     </button>
+                  </div>
+               </div>
+            </div>
+
+            <button
+               type="button"
+               class="primary-text fs-20 fw-medium d-flex gap-2 align-items-center justify-content-center w-fit mx-auto mt-lg-5 mt-4 p-0 border-0 bg-transparent"
+            >
+               Explore All Help Articles
+               <img
+                  src="./img/icon/ic-right-arrow-lg-primary.svg"
+                  alt="Right Arrow"
+               />
+            </button>
+         </div>
+      </section>
+      <!-- Popular Help Topics Section End -->
+
+      <!-- CTA Section Start -->
+      <section class="cta-sec position-relative">
+         <div class="max-w p-sm-4 p-3 text-center">
+            <div class="col-sm-8 mx-auto">
+               <h2 class="sub-heading2 fw-semibold text-center mb-4 pb-md-2">
+                  Still have questions?
+               </h2>
+
+               <p class="text-center text-white-50 fs-20">
+                  Our support team is here to help you get started.
+               </p>
+            </div>
+
+            <div
+               class="mt-md-5 mt-32 d-flex justify-content-center align-items-center gap-2"
+            >
+               <button
+                  type="button"
+                  class="btn fw-semibold primary-btn-md px-sm-5 px-4"
+               >
+                  Go to Help Center
+               </button>
+            </div>
+         </div>
+      </section>
+      <!-- CTA Section End -->
+
+      <!-- Footer Section Start -->
+      <section class="pt-5 pb-md-5 pb-4 blur-lines-bg">
+         <div class="max-w px-sm-4 px-3">
+            <div class="row gy-4">
+               <div class="col-md-5 col-sm-4">
+                  <a class="navbar-brand fw-bold fs-2 primary-text" href="#"
+                     >LOGO</a
+                  >
+
+                  <div class="d-flex gap-2 align-items-center mt-md-4 mt-3">
+                     <a href="#" class="text-decoration-none">
+                        <img
+                           src="./img/icon/ic-discord.svg"
+                           alt="Social Icon"
+                        />
+                     </a>
+                     <a href="#" class="text-decoration-none">
+                        <img
+                           src="./img/icon/ic-youtube.svg"
+                           alt="Social Icon"
+                        />
+                     </a>
+                     <a href="#" class="text-decoration-none">
+                        <img
+                           src="./img/icon/ic-linkedin.svg"
+                           alt="Social Icon"
+                        />
+                     </a>
+                  </div>
+               </div>
+
+               <div class="col-md-3 col-sm-4 col-6">
+                  <h6 class="fs-24 mb-3">Products</h6>
+                  <ul class="list-unstyled">
+                     <li class="mb-2">
+                        <a href="#" class="text-unset text-decoration-none"
+                           >Server Catalogue</a
+                        >
+                     </li>
+                     <li class="mb-2">
+                        <a href="#" class="text-unset text-decoration-none"
+                           >Dashboard</a
+                        >
+                     </li>
+                     <li>
+                        <a href="#" class="text-unset text-decoration-none"
+                           >Plans</a
+                        >
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="col-md-3 col-sm-4 col-6">
+                  <h6 class="fs-24 mb-3">Company</h6>
+                  <ul class="list-unstyled">
+                     <li class="mb-2">
+                        <a
+                           href="./about-us.html"
+                           class="text-unset text-decoration-none"
+                           >About</a
+                        >
+                     </li>
+                     <li class="mb-2">
+                        <a href="#" class="text-unset text-decoration-none"
+                           >Contact</a
+                        >
+                     </li>
+                     <li>
+                        <a
+                           href="./help.html"
+                           class="text-unset text-decoration-none"
+                           >Help</a
+                        >
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <hr />
+
+            <div
+               class="d-flex gap-3 align-items-center justify-content-between flex-md-row flex-column"
+            >
+               <p class="mb-0 text-secondary text-sm-start text-center">
+                  © 2025 Mottif AI. Empowering digital income through GPU power.
+               </p>
+
+               <div class="d-flex align-items-center gap-3">
+                  <a href="#" class="text-secondary small text-nowrap"
+                     >Privacy Policy</a
+                  >
+                  <a href="#" class="text-secondary small text-nowrap"
+                     >Cookie Policy</a
+                  >
+                  <a href="#" class="text-secondary small text-nowrap"
+                     >Terms of use</a
+                  >
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer Section End -->
+
+      <!-- Page Loader Start -->
+      <div
+         id="page-loader"
+         class="position-fixed top-0 start-0 w-100 min-vh-100 bg-white d-flex justify-content-center align-items-center"
+         style="z-index: 9999"
+      >
+         <div
+            class="spinner-border text-black"
+            style="width: 2.5rem; height: 2.5rem"
+            role="status"
+         ></div>
+      </div>
+      <!-- Page Loader End -->
+
+      <!-- JavaScript Scripts -->
+      <script src="./js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"></script>
+   </body>
+</html>

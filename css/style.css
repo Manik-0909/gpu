@@ -369,6 +369,10 @@ header .nav-item .nav-link.active {
       font-size: var(--sub-heading3);
    }
 
+   .sub-heading3 {
+      font-size: var(--fs-24);
+   }
+
    .fs-24 {
       font-size: var(--fs-20);
    }
