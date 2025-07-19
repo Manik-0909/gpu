@@ -457,6 +457,12 @@ header .nav-item .nav-link.active {
    background: var(--pending-status);
 }
 
+.dropdown-item.active,
+.dropdown-item:active {
+   color: var(--secondary-color);
+   background-color: var(--primary-color);
+}
+
 /* Media Queries */
 @media only screen and (max-width: 992px) {
    .main-heading {

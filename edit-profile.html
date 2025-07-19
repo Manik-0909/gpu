@@ -3,9 +3,217 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <!-- Bootstrap CSS File -->
+      <link rel="stylesheet" href="./css/bootstrap.min.css" />
+      <!-- Custom CSS File -->
+      <link rel="stylesheet" href="./css/style.css" />
+      <title>GPU</title>
    </head>
-   <body>
-      Hello
+   <body class="screen-bg">
+      <!-- Header Section Start -->
+      <div class="position-sticky top-0 z-3">
+         <header class="bg-white rounded-12 border dashboard-header">
+            <nav class="navbar navbar-expand-md">
+               <div class="container-fluid">
+                  <button
+                     class="d-md-none invisible border-0 shadow-none p-0"
+                     type="button"
+                  >
+                     <img
+                        src="./img/icon/ic-toggle-menu.svg"
+                        alt="Toggle Menu Icon"
+                        style="width: 24px"
+                     />
+                  </button>
+                  <a
+                     class="navbar-brand fw-bold fs-2 primary-text me-0"
+                     href="#"
+                     >LOGO</a
+                  >
+                  <button
+                     class="navbar-toggler border-0 shadow-none p-0"
+                     type="button"
+                     data-bs-toggle="offcanvas"
+                     data-bs-target="#offcanvasNavbar"
+                     aria-controls="offcanvasNavbar"
+                     aria-label="Toggle navigation"
+                  >
+                     <img
+                        src="./img/icon/ic-toggle-menu.svg"
+                        alt="Toggle Menu Icon"
+                        style="width: 24px"
+                     />
+                  </button>
+                  <div
+                     class="offcanvas offcanvas-end"
+                     tabindex="-1"
+                     id="offcanvasNavbar"
+                     aria-labelledby="offcanvasNavbarLabel"
+                  >
+                     <div class="offcanvas-header pb-0">
+                        <h5
+                           class="offcanvas-title fw-bold fs-2 primary-text"
+                           id="offcanvasNavbarLabel"
+                        >
+                           LOGO
+                        </h5>
+                        <button
+                           type="button"
+                           class="btn-close border-0 shadow-none"
+                           data-bs-dismiss="offcanvas"
+                           aria-label="Close"
+                        ></button>
+                     </div>
+                     <div class="offcanvas-body">
+                        <ul
+                           class="navbar-nav justify-content-md-center align-items-md-center flex-grow-1 gap-lg-4"
+                        >
+                           <li class="nav-item pe-lg-2">
+                              <a
+                                 class="nav-link"
+                                 aria-current="page"
+                                 href="./dashboard.html"
+                                 >Dashboards</a
+                              >
+                           </li>
+                           <li class="nav-item pe-lg-2">
+                              <a class="nav-link" href="./servers.html"
+                                 >My Servers
+                              </a>
+                           </li>
+                           <li class="nav-item pe-lg-2">
+                              <a class="nav-link" href="./deposit.html"
+                                 >Deposit</a
+                              >
+                           </li>
+                           <li class="nav-item pe-lg-2">
+                              <a class="nav-link" href="./withdraw.html"
+                                 >Withdraw</a
+                              >
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="./earnings.html"
+                                 >Earnings</a
+                              >
+                           </li>
+                        </ul>
+                        <div
+                           class="d-flex align-items-center gap-4 text-nowrap mt-md-0 mt-4"
+                        >
+                           <button
+                              type="button"
+                              class="btn bg-transparent border-0 p-0"
+                           >
+                              <img
+                                 src="./img/icon/ic-notification.svg"
+                                 alt="Notification"
+                              />
+                           </button>
+
+                           <div class="dropdown profile-dropdown">
+                              <button
+                                 class="btn primary-btn dropdown-toggle border-0 fw-medium"
+                                 type="button"
+                                 data-bs-toggle="dropdown"
+                                 aria-expanded="false"
+                              >
+                                 Profile
+                              </button>
+                              <ul class="dropdown-menu">
+                                 <li>
+                                    <a
+                                       class="dropdown-item"
+                                       href="./edit-profile.html"
+                                       >Edit Profile</a
+                                    >
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="./login.html"
+                                       >Log Out</a
+                                    >
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </header>
+      </div>
+      <!-- Header Section End -->
+
+      <!-- Content Start -->
+      <section
+         class="section-py blur-lines-bg position-relative overflow-hidden"
+      >
+         <div class="max-w px-sm-4 px-3">
+            <div class="text-center">
+               <!-- Breadcrumb -->
+               <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb fs-20 fw-medium justify-content-center">
+                     <li class="breadcrumb-item">
+                        <a
+                           href="./dashboard.html"
+                           class="text-decoration-none text-secondary"
+                           >Dashboard</a
+                        >
+                     </li>
+
+                     <li
+                        class="breadcrumb-item active primary-text"
+                        aria-current="page"
+                     >
+                        Profile
+                     </li>
+                  </ol>
+               </nav>
+               <h2 class="fw-semibold sub-heading1">Edit Profile</h2>
+
+               <p class="mb-0 fs-20 text-secondary">
+                  Manage your personal information, email and passwords.
+               </p>
+            </div>
+
+            <div class="mt-5">
+               <div class="mt-3">
+                  <label
+                     for="amount"
+                     class="form-label mb-1 fs-20 fw-medium text-unset"
+                     >Amount to withdraw(USD)</label
+                  >
+                  <input
+                     type="text"
+                     class="form-control input-h fs-20 py-4 bg-transparent"
+                     id="amount"
+                  />
+               </div>
+            </div>
+         </div>
+
+         <!-- Background Effect Shapes -->
+         <div class="bg-effect-right top-0 start-0" style="z-index: -1"></div>
+         <div class="bg-effect-right top-0 end-0" style="z-index: -1"></div>
+      </section>
+      <!-- Content End -->
+
+      <!-- Page Loader Start -->
+      <!-- <div
+         id="page-loader"
+         class="position-fixed top-0 start-0 w-100 min-vh-100 bg-white d-flex justify-content-center align-items-center"
+         style="z-index: 9999"
+      >
+         <div class="dot-loader d-flex gap-1">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+         </div>
+      </div> -->
+      <!-- Page Loader End -->
+
+      <!-- JavaScript Scripts -->
+      <script src="./js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"></script>
    </body>
 </html>
