@@ -42,6 +42,10 @@
    --fs-20: 20px;
    --fs-18: 18px;
    --max-w: 1280px;
+   --success-status: #aeffaf;
+   --cancel-status: #ffaeae;
+   --bonus-status: #edaeff;
+   --pending-status: #fff3cd;
    /* --a: #E0E0E0; */
 }
 
@@ -422,6 +426,37 @@ header .nav-item .nav-link.active {
    background: var(--primary-color);
 }
 
+.box-shadow2 {
+   box-shadow: var(--box-shadow2);
+}
+
+.page-link {
+   background: transparent;
+   color: var(--gray-color);
+   border: 0;
+}
+
+#referral-table * {
+   border: 0;
+   vertical-align: middle;
+}
+
+.success-status {
+   background: var(--success-status);
+}
+
+.cancel-status {
+   background: var(--cancel-status);
+}
+
+.bonus-status {
+   background: var(--bonus-status);
+}
+
+.pending-status {
+   background: var(--pending-status);
+}
+
 /* Media Queries */
 @media only screen and (max-width: 992px) {
    .main-heading {
@@ -474,7 +509,6 @@ header .nav-item .nav-link.active {
 
    .primary-btn-lg {
       font-size: var(--fs-18);
-      padding-block: 8px;
    }
 
    .section-py {
@@ -494,5 +528,9 @@ header .nav-item .nav-link.active {
 @media only screen and (max-width: 576px) {
    .login-form {
       padding: 40px 24px;
+   }
+
+   .custom-sm-w-100 {
+      width: 100%;
    }
 }

@@ -70,7 +70,7 @@
                         >
                            <li class="nav-item pe-lg-2">
                               <a
-                                 class="nav-link active"
+                                 class="nav-link"
                                  aria-current="page"
                                  href="./dashboard.html"
                                  >Dashboards</a
@@ -82,13 +82,19 @@
                               </a>
                            </li>
                            <li class="nav-item pe-lg-2">
-                              <a class="nav-link" href="#">Deposit</a>
+                              <a class="nav-link" href="./deposit.html"
+                                 >Deposit</a
+                              >
                            </li>
                            <li class="nav-item pe-lg-2">
-                              <a class="nav-link" href="#">Withdraw</a>
+                              <a class="nav-link active" href="./withdraw.html"
+                                 >Withdraw</a
+                              >
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link" href="#">Earnings</a>
+                              <a class="nav-link" href="./earnings.html"
+                                 >Earnings</a
+                              >
                            </li>
                         </ul>
                         <div
@@ -142,152 +148,192 @@
       </div>
       <!-- Header Section End -->
 
-      <!-- Welcome Section Start -->
+      <!-- Content Start -->
       <section
          class="section-py blur-lines-bg position-relative overflow-hidden"
       >
          <div class="max-w px-sm-4 px-3">
-            <div
-               class="p-lg-5 p-4 rounded-5 box-shadow2 mb-5"
-               style="background-color: #ffffffa3"
-            >
-               <h2 class="fw-semibold sub-heading2 mb-3">
-                  Welcome back, Uzma!
-               </h2>
+            <div class="text-center">
+               <!-- Breadcrumb -->
+               <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb fs-20 fw-medium justify-content-center">
+                     <li class="breadcrumb-item">
+                        <a
+                           href="./dashboard.html"
+                           class="text-decoration-none text-secondary"
+                           >Dashboard</a
+                        >
+                     </li>
+
+                     <li
+                        class="breadcrumb-item active primary-text"
+                        aria-current="page"
+                     >
+                        Withdraw
+                     </li>
+                  </ol>
+               </nav>
+               <h2 class="fw-semibold sub-heading1">Withdraw Funds</h2>
 
                <p class="mb-0 fs-20 text-secondary">
-                  Here’s what’s happening in your account today.
+                  Browse our help options or contact our support team directly .
                </p>
             </div>
 
-            <div class="row gy-4">
-               <div class="col-sm-6 d-grid">
-                  <div
-                     class="bg-white rounded-12 border-top border-5 border-black p-md-5 p-4"
-                  >
-                     <div
-                        class="sub-heading3 d-flex align-items-center gap-2 lh-sm"
-                     >
-                        <img
-                           src="./img/icon/ic-money.svg"
-                           alt="Money Icon"
-                           class="pe-1"
-                        />
-                        This Month’s Earnings
-                     </div>
-
-                     <h2 class="fw-semibold mt-4 mb-3 sub-heading1">$482.00</h2>
-                     <p class="mb-0 text-secondary">Updated: July 12, 2025</p>
-                  </div>
+            <div class="mt-5">
+               <div class="primary-bg p-lg-5 p-4 rounded-12 text-end">
+                  <button class="p-0 bg-transparent border-0" type="button">
+                     <img src="./img/icon/ic-info.svg" alt="Info Icon" />
+                  </button>
+                  <h2 class="fw-bold sub-heading1 mt-3 text-center">$684.50</h2>
+                  <p class="text-center">Available Balance</p>
                </div>
 
-               <div class="col-sm-6 d-grid">
-                  <div
-                     class="bg-white rounded-12 border-top border-5 border-black p-md-5 p-4"
-                  >
-                     <div class="sub-heading3 d-flex align-items-center gap-2">
-                        <img
-                           src="./img/icon/ic-servers-primary.svg"
-                           alt="Server Icon"
-                           class="pe-1"
-                        />
-                        Active Servers
+               <div>
+                  <div class="mt-3">
+                     <label
+                        for="amount"
+                        class="form-label mb-1 fs-20 fw-medium text-unset"
+                        >Amount to withdraw(USD)</label
+                     >
+                     <input
+                        type="text"
+                        class="form-control input-h fs-20 py-4 bg-transparent"
+                        id="amount"
+                     />
+                  </div>
+
+                  <div class="mt-5">
+                     <div class="border border-secondary rounded-12">
+                        <h5 class="p-4 pb-0 fw-normal sub-heading3">
+                           Fee Summary
+                        </h5>
+
+                        <div
+                           class="p-4 pb-3 d-flex gap-3 align-items-center justify-content-between"
+                        >
+                           <h6 class="fw-normal fs-24 mb-0">
+                              Requested Amount
+                           </h6>
+
+                           <p class="mb-0 fw-semibold fs-24">$0.00</p>
+                        </div>
+
+                        <div
+                           class="px-4 py-0 d-flex gap-3 align-items-center justify-content-between"
+                        >
+                           <h6 class="fw-normal fs-24 mb-0">Withdraw Fee</h6>
+
+                           <p class="mb-0 fw-semibold fs-24">-$0.00</p>
+                        </div>
+
+                        <hr class="border-black" />
+
+                        <div
+                           class="p-4 pt-0 d-flex gap-3 align-items-center justify-content-between"
+                        >
+                           <h6 class="fw-semibold fs-24 mb-0">Final Payout</h6>
+
+                           <p class="mb-0 fw-semibold fs-24 primary-text">
+                              $0.00
+                           </p>
+                        </div>
                      </div>
 
-                     <h2 class="fw-semibold mt-4 mb-3 sub-heading1">4</h2>
-                     <p class="mb-0 text-secondary">Fully operational</p>
+                     <div
+                        class="d-flex align-items-center gap-2 justify-content-center mt-3 fs-18"
+                     >
+                        <img src="./img/icon/ic-lock.svg" alt="Lock Icon" />
+                        Secure Payment via Stripe
+                     </div>
                   </div>
                </div>
             </div>
          </div>
 
          <!-- Background Effect Shapes -->
-         <div class="bg-effect-right top-50 start-50" style="z-index: -1"></div>
+         <div class="bg-effect-right top-0 start-0" style="z-index: -1"></div>
+         <div class="bg-effect-right top-0 end-0" style="z-index: -1"></div>
       </section>
-      <!-- Welcome Section End -->
+      <!-- Content End -->
 
-      <!-- Quick Navigation Section Start -->
-      <section class="section-py lines-bg">
+      <!-- Recent Withdraw Section Start -->
+      <section class="section-py pt-0 blur-lines-bg">
          <div class="max-w px-sm-4 px-3">
-            <h2 class="fw-semibold sub-heading2 mb-3">Quick Navigation</h2>
+            <div class="p-3 light-bg border rounded-12">
+               <h5 class="fw-semibold fs-20">Recent Widrawals</h5>
 
-            <p class="mb-md-5 mb-4 fs-20 text-secondary">
-               Access key areas of your account instantly.
-            </p>
-            <div class="row gy-4">
-               <div class="col-md-4 col-sm-6 d-grid">
+               <div class="overflow-scroll">
                   <div
-                     class="border rounded-12 p-lg-5 p-4 light-bg text-center"
+                     class="d-flex gap-5 align-items-center justify-content-between mb-3 text-nowrap"
                   >
-                     <img src="./img/icon/ic-funds.svg" alt="Fund Icon" />
-                     <h5 class="fs-24 py-1 mt-2 mb-lg-3">Deposit Funds</h5>
-                     <p class="text-secondary mb-0">
-                        Top up using Stripe or Crypto
-                     </p>
+                     <div>
+                        <p class="text-secondary small mb-1">Dec 15,2024</p>
+                        <h6 class="fw-semibold">Bank Transfer</h6>
+                     </div>
+
+                     <div class="fs-24 fw-semibold">$150.00</div>
+
+                     <div
+                        class="badge success-status text-black fw-medium fs-6 rounded-4 px-3 py-2 d-flex gap-2 align-items-center justify-content-start w-fit"
+                     >
+                        <img
+                           src="./img/icon/ic-done.svg"
+                           alt="Completed Icon"
+                        />
+                        Completed
+                     </div>
                   </div>
-               </div>
 
-               <div class="col-md-4 col-sm-6 d-grid">
                   <div
-                     class="border rounded-12 p-lg-5 p-4 light-bg text-center"
+                     class="d-flex gap-5 align-items-center justify-content-between mb-3 text-nowrap"
                   >
-                     <img
-                        src="./img/icon/ic-withdraw.svg"
-                        alt="Withdraw Icon"
-                     />
-                     <h5 class="fs-24 py-1 mt-2 mb-lg-3">Withdraw Earnings</h5>
-                     <p class="text-secondary mb-0">
-                        Transfer balance to your bank or wallet
-                     </p>
+                     <div>
+                        <p class="text-secondary small mb-1">Dec 15,2024</p>
+                        <h6 class="fw-semibold">Bank Transfer</h6>
+                     </div>
+
+                     <div class="fs-24 fw-semibold">$150.00</div>
+
+                     <div
+                        class="badge pending-status text-black fw-medium fs-6 rounded-4 px-3 py-2 d-flex gap-2 align-items-center justify-content-start w-fit"
+                     >
+                        <img
+                           src="./img/icon/ic-pending.svg"
+                           alt="Pending Icon"
+                        />
+                        Pending
+                     </div>
                   </div>
-               </div>
 
-               <div class="col-md-4 col-sm-6 d-grid">
                   <div
-                     class="border rounded-12 p-lg-5 p-4 light-bg text-center"
+                     class="d-flex gap-5 text-nowrap align-items-center justify-content-between"
                   >
-                     <img src="./img/icon/ic-servers.svg" alt="Servers Icon" />
-                     <h5 class="fs-24 py-1 mt-2 mb-lg-3">View Servers</h5>
-                     <p class="text-secondary mb-0">
-                        See your rented GPUs and performance
-                     </p>
+                     <div>
+                        <p class="text-secondary small mb-1">Dec 15,2024</p>
+                        <h6 class="fw-semibold">Bank Transfer</h6>
+                     </div>
+
+                     <div class="fs-24 fw-semibold">$150.00</div>
+
+                     <div
+                        class="badge success-status text-black fw-medium fs-6 rounded-4 px-3 py-2 d-flex gap-2 align-items-center justify-content-start w-fit"
+                     >
+                        <img
+                           src="./img/icon/ic-done.svg"
+                           alt="Completed Icon"
+                        />
+                        Completed
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </section>
-      <!-- Quick Navigation Section End -->
-
-      <!-- Pro Tip Section Start -->
-      <section class="section-py blur-lines-bg">
-         <div class="max-w px-sm-4 px-3">
-            <div
-               class="d-sm-flex gap-4 align-items-center justify-content-between py-5 px-4 rounded-5"
-               style="background: #defcb554"
-            >
-               <div class="d-flex gap-2 align-items-center">
-                  <img src="./img/icon/ic-updates.svg" alt="Updates Icon" />
-                  <h6 class="fs-20 fw-normal mb-0">
-                     Pro Tip: You can add multiple GPUs to boost your income
-                     faster.
-                  </h6>
-               </div>
-               <div class="d-flex gap-2 align-items-center mt-sm-0 mt-4">
-                  <button
-                     type="button"
-                     class="btn fw-semibold primary-btn-md px-lg-5 px-4 text-nowrap"
-                  >
-                     Learn How
-                  </button>
-                  <img src="./img/icon/ic-close.svg" alt="Close Icon" />
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Pro Tip Section End -->
+      <!-- Recent Withdraw Section End -->
 
       <!-- Footer Section Start -->
-      <section class="pt-5 pb-md-5 pb-4 blur-lines-bg">
+      <section class="pt-5 pb-md-5 pb-4 blur-lines-bg white-bg">
          <div class="max-w px-sm-4 px-3">
             <div class="row gy-4">
                <div class="col-md-5 col-sm-4">
@@ -324,7 +370,7 @@
                   <ul class="list-unstyled">
                      <li class="mb-2">
                         <a
-                           href="./servers.html"
+                           href="./catalogue-details.html"
                            class="text-unset text-decoration-none"
                            >Server Catalogue</a
                         >
