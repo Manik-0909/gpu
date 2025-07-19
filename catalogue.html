@@ -15,7 +15,20 @@
          <header class="bg-white z-3 rounded-12 border mt-sm-4 mt-3">
             <nav class="navbar navbar-expand-md">
                <div class="container-fluid">
-                  <a class="navbar-brand fw-bold fs-2 primary-text" href="#"
+                  <button
+                     class="d-md-none invisible border-0 shadow-none p-0"
+                     type="button"
+                  >
+                     <img
+                        src="./img/icon/ic-toggle-menu.svg"
+                        alt="Toggle Menu Icon"
+                        style="width: 24px"
+                     />
+                  </button>
+
+                  <a
+                     class="navbar-brand fw-bold fs-2 primary-text me-0"
+                     href="#"
                      >LOGO</a
                   >
                   <button
@@ -141,11 +154,11 @@
             </p>
 
             <div class="row gy-5">
-               <div class="col-md-4 col-sm-6 d-grid">
+               <div class="col-lg-4 col-sm-6 d-grid">
                   <div class="border rounded-3 p-4 bg-white">
                      <button
                         type="button"
-                        class="btn fw-semibold fs-18 primary-outline-btn rounded-12 py-3 px-4 bg-transparent"
+                        class="btn fw-semibold fs-18 primary-outline-btn rounded-12 py-2 px-3 bg-transparent"
                      >
                         PERSONAL
                      </button>
@@ -159,29 +172,61 @@
                      <ul class="list-unstyled p-0 mb-0">
                         <li class="fs-20">1 × RTX 4090</li>
                         <li class="fs-20 my-3">48GB VRAM</li>
-                        <li class="fs-20 primary-text">Add Extra GPU</li>
+                        <li>
+                           <button
+                              class="btn fs-20 primary-text p-0 border-0 bg-transparent"
+                           >
+                              Add Extra GPU
+                           </button>
+                        </li>
                      </ul>
 
-                     <details class="mt-32">
-                        <summary
-                           class="primary-text text-decoration-underline fs-20"
-                        >
-                           Details
-                           <img
-                              src="./img/icon/ic-down-arrow.svg"
-                              alt="Down Arrow Icon"
-                           />
-                        </summary>
-                        <p class="mb-0 px-4 mt-1">
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Inventore, facere.
-                        </p>
-                     </details>
+                     <div class="mt-32">
+                        <h3 class="fw-bold sub-heading2">$1,200 per server</h3>
 
-                     <div class="d-flex align-items-center gap-2 mt-5">
+                        <p class="fs-18 primary-text mt-4 mb-0">(SAVE $200)</p>
+
+                        <div class="border p-2 light-bg rounded-12 mt-32">
+                           <h6 class="fs-20 fw-normal">
+                              Expected Monthly Profit
+                           </h6>
+                           <p class="primary-text fs-20 mb-0">
+                              20–25% monthly (~$240–300)
+                           </p>
+                        </div>
+                     </div>
+
+                     <div
+                        class="badge primary-bg fs-18 rounded-5 mt-32 fw-normal"
+                     >
+                        Instant Setup
+                     </div>
+
+                     <ul class="list-unstyled p-0 mb-0 mt-32">
+                        <li class="d-flex align-items-center gap-2 mb-1">
+                           <img src="./img/icon/ic-tick.svg" alt="Tick Icon" />
+                           Uptime guarantee
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mb-1">
+                           <img src="./img/icon/ic-tick.svg" alt="Tick Icon" />
+                           Server management
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mb-1">
+                           <img src="./img/icon/ic-tick.svg" alt="Tick Icon" />
+                           Real-time dashboard access
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                           <img src="./img/icon/ic-tick.svg" alt="Tick Icon" />
+                           Automated crypto payout
+                        </li>
+                     </ul>
+
+                     <div
+                        class="d-flex align-items-center flex-xl-nowrap flex-wrap gap-2 mt-5"
+                     >
                         <button
                            type="button"
-                           class="btn fw-semibold w-100 primary-btn-lg"
+                           class="btn fw-semibold w-100 primary-btn-lg text-nowrap"
                         >
                            View Details
                         </button>
@@ -196,51 +241,92 @@
                   </div>
                </div>
 
-               <div class="col-md-4 col-sm-6 d-grid">
+               <div class="col-lg-4 col-sm-6 d-grid">
                   <div
-                     class="border rounded-3 p-2 primary-gradient-bg primary-border text-center position-relative"
+                     class="border rounded-3 p-4 primary-gradient-bg position-relative"
                   >
                      <button
                         type="button"
-                        class="btn fw-semibold fs-18 primary-btn-md rounded-12 py-3 px-4 bg-transparent"
+                        class="btn fw-semibold fs-18 primary-outline-btn rounded-12 py-2 px-3 bg-transparent"
                      >
-                        STANDARD
+                        PERSONAL
                      </button>
 
                      <h5 class="sub-heading2 fw-bold mt-lg-5 mt-4">
-                        NEURAL FUSION
+                        TITAN CORE
                      </h5>
 
                      <hr class="border-secondary my-4" />
 
                      <ul class="list-unstyled p-0 mb-0">
-                        <li class="fs-20">1 × RTX 5090</li>
-                        <li class="fs-20 my-3">$1,200 per server</li>
-                        <li class="fs-20">20–25% (~$240–300)</li>
+                        <li class="fs-20">1 × RTX 4090</li>
+                        <li class="fs-20 my-3">48GB VRAM</li>
+                        <li>
+                           <button
+                              class="btn fs-20 primary-text p-0 border-0 bg-transparent"
+                           >
+                              Add Extra GPU
+                           </button>
+                        </li>
                      </ul>
 
-                     <details class="mt-32">
-                        <summary
-                           class="primary-text text-decoration-underline fs-20"
-                        >
-                           Details
-                           <img
-                              src="./img/icon/ic-down-arrow.svg"
-                              alt="Down Arrow Icon"
-                           />
-                        </summary>
-                        <p class="mb-0 px-4 mt-1">
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Inventore, facere.
-                        </p>
-                     </details>
+                     <div class="mt-32">
+                        <h3 class="fw-bold sub-heading2">$1,200 per server</h3>
 
-                     <button
-                        type="button"
-                        class="btn fw-semibold mt-md-5 mt-4 w-100 primary-btn-lg"
+                        <p class="fs-18 primary-text mt-4 mb-0">(SAVE $200)</p>
+
+                        <div class="border p-2 light-bg rounded-12 mt-32">
+                           <h6 class="fs-20 fw-normal">
+                              Expected Monthly Profit
+                           </h6>
+                           <p class="primary-text fs-20 mb-0">
+                              20–25% monthly (~$240–300)
+                           </p>
+                        </div>
+                     </div>
+
+                     <div
+                        class="badge primary-bg fs-18 rounded-5 mt-32 fw-normal"
                      >
-                        Add Extra GPU
-                     </button>
+                        Instant Setup
+                     </div>
+
+                     <ul class="list-unstyled p-0 mb-0 mt-32">
+                        <li class="d-flex align-items-center gap-2 mb-1">
+                           <img src="./img/icon/ic-tick.svg" alt="Tick Icon" />
+                           Uptime guarantee
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mb-1">
+                           <img src="./img/icon/ic-tick.svg" alt="Tick Icon" />
+                           Server management
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mb-1">
+                           <img src="./img/icon/ic-tick.svg" alt="Tick Icon" />
+                           Real-time dashboard access
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                           <img src="./img/icon/ic-tick.svg" alt="Tick Icon" />
+                           Automated crypto payout
+                        </li>
+                     </ul>
+
+                     <div
+                        class="d-flex align-items-center flex-xl-nowrap flex-wrap gap-2 mt-5"
+                     >
+                        <button
+                           type="button"
+                           class="btn fw-semibold w-100 primary-btn-lg text-nowrap"
+                        >
+                           View Details
+                        </button>
+
+                        <button
+                           type="button"
+                           class="btn fw-semibold w-100 white-btn border rounded-12 px-3 fs-20 primary-border text-nowrap"
+                        >
+                           Add Extra GPU
+                        </button>
+                     </div>
 
                      <div
                         class="light-bg border primary-border px-2 rounded-12 w-fit fs-18 fw-medium text-nowrap popular-plan"
@@ -250,51 +336,90 @@
                   </div>
                </div>
 
-               <div class="col-md-4 col-sm-6 d-grid">
-                  <div class="border rounded-3 p-2 bg-white text-center">
+               <div class="col-lg-4 col-sm-6 d-grid">
+                  <div class="border rounded-3 p-4 bg-white">
                      <button
                         type="button"
-                        class="btn fw-semibold fs-18 primary-outline-btn rounded-12 py-3 px-4 bg-transparent"
+                        class="btn fw-semibold fs-18 primary-outline-btn rounded-12 py-2 px-3 bg-transparent"
                      >
-                        PRO
+                        PERSONAL
                      </button>
 
                      <h5 class="sub-heading2 fw-bold mt-lg-5 mt-4">
-                        QUANTUM CORE
+                        TITAN CORE
                      </h5>
 
                      <hr class="border-secondary my-4" />
 
                      <ul class="list-unstyled p-0 mb-0">
-                        <li class="fs-20">3 × RTX 5090</li>
-                        <li class="fs-20 my-3">
-                           $3,400 per server (save $200)
+                        <li class="fs-20">1 × RTX 4090</li>
+                        <li class="fs-20 my-3">48GB VRAM</li>
+                        <li>
+                           <button
+                              class="btn fs-20 primary-text p-0 border-0 bg-transparent"
+                           >
+                              Add Extra GPU
+                           </button>
                         </li>
-                        <li class="fs-20">25–30% (~$850–1,020)</li>
                      </ul>
 
-                     <details class="mt-32">
-                        <summary
-                           class="primary-text text-decoration-underline fs-20"
-                        >
-                           Details
-                           <img
-                              src="./img/icon/ic-down-arrow.svg"
-                              alt="Down Arrow Icon"
-                           />
-                        </summary>
-                        <p class="mb-0 px-4 mt-1">
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Inventore, facere.
-                        </p>
-                     </details>
+                     <div class="mt-32">
+                        <h3 class="fw-bold sub-heading2">$1,200 per server</h3>
 
-                     <button
-                        type="button"
-                        class="btn fw-semibold mt-md-5 mt-4 w-100 primary-btn-lg"
+                        <p class="fs-18 primary-text mt-4 mb-0">(SAVE $200)</p>
+
+                        <div class="border p-2 light-bg rounded-12 mt-32">
+                           <h6 class="fs-20 fw-normal">
+                              Expected Monthly Profit
+                           </h6>
+                           <p class="primary-text fs-20 mb-0">
+                              20–25% monthly (~$240–300)
+                           </p>
+                        </div>
+                     </div>
+
+                     <div
+                        class="badge primary-bg fs-18 rounded-5 mt-32 fw-normal"
                      >
-                        Add Extra GPU
-                     </button>
+                        Instant Setup
+                     </div>
+
+                     <ul class="list-unstyled p-0 mb-0 mt-32">
+                        <li class="d-flex align-items-center gap-2 mb-1">
+                           <img src="./img/icon/ic-tick.svg" alt="Tick Icon" />
+                           Uptime guarantee
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mb-1">
+                           <img src="./img/icon/ic-tick.svg" alt="Tick Icon" />
+                           Server management
+                        </li>
+                        <li class="d-flex align-items-center gap-2 mb-1">
+                           <img src="./img/icon/ic-tick.svg" alt="Tick Icon" />
+                           Real-time dashboard access
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                           <img src="./img/icon/ic-tick.svg" alt="Tick Icon" />
+                           Automated crypto payout
+                        </li>
+                     </ul>
+
+                     <div
+                        class="d-flex align-items-center flex-xl-nowrap flex-wrap gap-2 mt-5"
+                     >
+                        <button
+                           type="button"
+                           class="btn fw-semibold w-100 primary-btn-lg text-nowrap"
+                        >
+                           View Details
+                        </button>
+
+                        <button
+                           type="button"
+                           class="btn fw-semibold w-100 white-btn border rounded-12 px-3 fs-20 primary-border text-nowrap"
+                        >
+                           Add Extra GPU
+                        </button>
+                     </div>
                   </div>
                </div>
             </div>
@@ -305,13 +430,16 @@
       <!-- CTA Section Start -->
       <section class="cta-sec position-relative">
          <div class="max-w p-sm-4 p-3 text-center">
+            <img src="./img/cta-img.png" alt="CTA user" />
             <div class="col-sm-8 mx-auto">
-               <h2 class="sub-heading2 fw-semibold text-center mb-4 pb-md-2">
-                  Still have questions?
+               <h2
+                  class="sub-heading2 fw-semibold text-center mt-md-3 mt-2 mb-md-3 mb-2"
+               >
+                  Ready to Start Earning?
                </h2>
 
                <p class="text-center text-white-50 fs-20">
-                  Our support team is here to help you get started.
+                  Rent your first GPU today and start building passive income.
                </p>
             </div>
 
@@ -320,21 +448,123 @@
             >
                <button
                   type="button"
+                  class="btn fw-semibold fs-18 white-btn border rounded-12 px-sm-5 px-4 bg-transparent text-white"
+               >
+                  Start Earning
+               </button>
+
+               <button
+                  type="button"
                   class="btn fw-semibold primary-btn-md px-sm-5 px-4"
                >
-                  Go to Help Center
+                  View Plans
                </button>
             </div>
          </div>
       </section>
       <!-- CTA Section End -->
 
+      <!-- FAQ Accordion Section Start -->
+      <div class="bg-white blur-lines-bg">
+         <section class="section-py max-w px-sm-4 px-3">
+            <h2 class="fw-semibold sub-heading2 text-center mb-md-5 mb-4">
+               Have Any Question? Got All Answer here
+            </h2>
+
+            <div class="accordion" id="faqAccordion">
+               <div class="accordion-item light-bg rounded-4 mb-3">
+                  <h2 class="accordion-header text-unset">
+                     <button
+                        class="accordion-button fs-18 shadow-none bg-transparent text-black gap-3"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                     >
+                        How long does it take to activate a server?
+                     </button>
+                  </h2>
+                  <div
+                     id="collapseOne"
+                     class="accordion-collapse collapse show"
+                     data-bs-parent="#faqAccordion"
+                  >
+                     <div class="accordion-body fs-18 pt-2 text-secondary">
+                        Most servers activatedwithin 24 house. Instant setup is
+                        available for plans.
+                     </div>
+                  </div>
+               </div>
+
+               <div class="accordion-item light-bg rounded-4 mb-3">
+                  <h2 class="accordion-header text-unset">
+                     <button
+                        class="accordion-button fs-18 shadow-none bg-transparent text-black collapsed gap-3"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="collapseTwo"
+                     >
+                        How are profits calculated?
+                     </button>
+                  </h2>
+                  <div
+                     id="collapseTwo"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#faqAccordion"
+                  >
+                     <div class="accordion-body fs-18 pt-2 text-secondary">
+                        When you rent a GPU server, it starts processing AI
+                        tasks or crypto mining based on global demand. At the
+                        end of each 30-day cycle, your share of the profits is
+                        calculated based on GPU performance and usage. These
+                        profits are deposited into your Mottif AI wallet
+                     </div>
+                  </div>
+               </div>
+
+               <div class="accordion-item light-bg rounded-4 mb-3">
+                  <h2 class="accordion-header text-unset">
+                     <button
+                        class="accordion-button fs-18 shadow-none bg-transparent text-black collapsed gap-3"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="true"
+                        aria-controls="collapseThree"
+                     >
+                        What payment methods do you accept?
+                     </button>
+                  </h2>
+                  <div
+                     id="collapseThree"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#faqAccordion"
+                  >
+                     <div class="accordion-body fs-18 pt-2 text-secondary">
+                        When you rent a GPU server, it starts processing AI
+                        tasks or crypto mining based on global demand. At the
+                        end of each 30-day cycle, your share of the profits is
+                        calculated based on GPU performance and usage. These
+                        profits are deposited into your Mottif AI wallet
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!-- FAQ Accordion Section End -->
+
       <!-- Footer Section Start -->
       <section class="pt-5 pb-md-5 pb-4 blur-lines-bg">
          <div class="max-w px-sm-4 px-3">
             <div class="row gy-4">
                <div class="col-md-5 col-sm-4">
-                  <a class="navbar-brand fw-bold fs-2 primary-text" href="#"
+                  <a
+                     class="navbar-brand fw-bold fs-2 primary-text me-0"
+                     href="#"
                      >LOGO</a
                   >
 
@@ -438,11 +668,11 @@
          class="position-fixed top-0 start-0 w-100 min-vh-100 bg-white d-flex justify-content-center align-items-center"
          style="z-index: 9999"
       >
-         <div
-            class="spinner-border text-black"
-            style="width: 2.5rem; height: 2.5rem"
-            role="status"
-         ></div>
+         <div class="dot-loader d-flex gap-1">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+         </div>
       </div>
       <!-- Page Loader End -->
 

@@ -15,7 +15,20 @@
          <header class="bg-white z-3 rounded-12 border mt-sm-4 mt-3">
             <nav class="navbar navbar-expand-md">
                <div class="container-fluid">
-                  <a class="navbar-brand fw-bold fs-2 primary-text" href="#"
+                  <button
+                     class="d-md-none invisible border-0 shadow-none p-0"
+                     type="button"
+                  >
+                     <img
+                        src="./img/icon/ic-toggle-menu.svg"
+                        alt="Toggle Menu Icon"
+                        style="width: 24px"
+                     />
+                  </button>
+
+                  <a
+                     class="navbar-brand fw-bold fs-2 primary-text me-0"
+                     href="#"
                      >LOGO</a
                   >
                   <button
@@ -408,7 +421,9 @@
          <div class="max-w px-sm-4 px-3">
             <div class="row gy-4">
                <div class="col-md-5 col-sm-4">
-                  <a class="navbar-brand fw-bold fs-2 primary-text" href="#"
+                  <a
+                     class="navbar-brand fw-bold fs-2 primary-text me-0"
+                     href="#"
                      >LOGO</a
                   >
 
@@ -512,11 +527,11 @@
          class="position-fixed top-0 start-0 w-100 min-vh-100 bg-white d-flex justify-content-center align-items-center"
          style="z-index: 9999"
       >
-         <div
-            class="spinner-border text-black"
-            style="width: 2.5rem; height: 2.5rem"
-            role="status"
-         ></div>
+         <div class="dot-loader d-flex gap-1">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+         </div>
       </div>
       <!-- Page Loader End -->
       <!-- JavaScript Scripts -->
