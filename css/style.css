@@ -100,6 +100,11 @@ body {
    -webkit-text-fill-color: transparent;
 }
 
+.main-heading.text-secondary {
+   -webkit-text-fill-color: unset;
+   color: var(--dark-gray-color) !important;
+}
+
 .bg-effect-left,
 .bg-effect-right {
    background: linear-gradient(
@@ -190,6 +195,10 @@ body {
 
 .section-py {
    padding-block: 100px;
+}
+
+.sub-heading1 {
+   font-size: var(--sub-heading1);
 }
 
 .sub-heading2 {
@@ -363,7 +372,6 @@ header .nav-item .nav-link.active {
    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-/* Loader CSS */
 .dot-loader .dot {
    width: 10px;
    height: 10px;
@@ -397,6 +405,10 @@ header .nav-item .nav-link.active {
       font-size: var(--sub-heading1);
    }
 
+   .sub-heading1 {
+      font-size: var(--sub-heading2);
+   }
+
    .sub-heading2 {
       font-size: var(--sub-heading3);
    }
@@ -421,6 +433,10 @@ header .nav-item .nav-link.active {
 
    .main-heading {
       font-size: var(--sub-heading2);
+   }
+
+   .sub-heading1 {
+      font-size: var(--sub-heading3);
    }
 
    .fs-20 {
