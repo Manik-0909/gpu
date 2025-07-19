@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Bootstrap CSS File -->
+      <link rel="stylesheet" href="./css/bootstrap.min.css" />
+      <!-- Custom CSS File -->
+      <link rel="stylesheet" href="./css/style.css" />
+      <title>GPU</title>
+   </head>
+   <body class="screen-bg">
+      <!-- Header Section Start -->
+      <div class="position-sticky top-0 z-3">
+         <header class="bg-white rounded-12 border dashboard-header">
+            <nav class="navbar navbar-expand-md">
+               <div class="container-fluid">
+                  <button
+                     class="d-md-none invisible border-0 shadow-none p-0"
+                     type="button"
+                  >
+                     <img
+                        src="./img/icon/ic-toggle-menu.svg"
+                        alt="Toggle Menu Icon"
+                        style="width: 24px"
+                     />
+                  </button>
+                  <a
+                     class="navbar-brand fw-bold fs-2 primary-text me-0"
+                     href="#"
+                     >LOGO</a
+                  >
+                  <button
+                     class="navbar-toggler border-0 shadow-none p-0"
+                     type="button"
+                     data-bs-toggle="offcanvas"
+                     data-bs-target="#offcanvasNavbar"
+                     aria-controls="offcanvasNavbar"
+                     aria-label="Toggle navigation"
+                  >
+                     <img
+                        src="./img/icon/ic-toggle-menu.svg"
+                        alt="Toggle Menu Icon"
+                        style="width: 24px"
+                     />
+                  </button>
+                  <div
+                     class="offcanvas offcanvas-end"
+                     tabindex="-1"
+                     id="offcanvasNavbar"
+                     aria-labelledby="offcanvasNavbarLabel"
+                  >
+                     <div class="offcanvas-header pb-0">
+                        <h5
+                           class="offcanvas-title fw-bold fs-2 primary-text"
+                           id="offcanvasNavbarLabel"
+                        >
+                           LOGO
+                        </h5>
+                        <button
+                           type="button"
+                           class="btn-close border-0 shadow-none"
+                           data-bs-dismiss="offcanvas"
+                           aria-label="Close"
+                        ></button>
+                     </div>
+                     <div class="offcanvas-body">
+                        <ul
+                           class="navbar-nav justify-content-md-center align-items-md-center flex-grow-1 gap-lg-4"
+                        >
+                           <li class="nav-item pe-lg-2">
+                              <a
+                                 class="nav-link active"
+                                 aria-current="page"
+                                 href="./dashboard.html"
+                                 >Dashboards</a
+                              >
+                           </li>
+                           <li class="nav-item pe-lg-2">
+                              <a class="nav-link" href="#">My Servers </a>
+                           </li>
+                           <li class="nav-item pe-lg-2">
+                              <a class="nav-link" href="#">Deposit</a>
+                           </li>
+                           <li class="nav-item pe-lg-2">
+                              <a class="nav-link" href="#">Withdraw</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Earnings</a>
+                           </li>
+                        </ul>
+                        <div
+                           class="d-flex align-items-center gap-4 text-nowrap mt-md-0 mt-4"
+                        >
+                           <button
+                              type="button"
+                              class="btn bg-transparent border-0 p-0"
+                           >
+                              <img
+                                 src="./img/icon/ic-notification.svg"
+                                 alt="Notification"
+                              />
+                           </button>
+
+                           <div class="dropdown profile-dropdown">
+                              <button
+                                 class="btn primary-btn dropdown-toggle border-0 fw-medium"
+                                 type="button"
+                                 data-bs-toggle="dropdown"
+                                 aria-expanded="false"
+                              >
+                                 Profile
+                              </button>
+                              <ul class="dropdown-menu">
+                                 <li>
+                                    <a class="dropdown-item" href="#"
+                                       >Profile</a
+                                    >
+                                 </li>
+                                 <li>
+                                    <a class="dropdown-item" href="#"
+                                       >Log Out</a
+                                    >
+                                 </li>
+                              </ul>
+                           </div>
+
+                           <!-- <a
+                              href="./signup.html"
+                              class="btn fw-semibold w-100 primary-btn px-4"
+                           >
+                              Sign Up
+                           </a> -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </header>
+      </div>
+      <!-- Header Section End -->
+
+      <!-- Quick Navigation Section Start -->
+      <section class="section-py lines-bg">
+         <div class="max-w px-sm-4 px-3">
+            <h2 class="fw-semibold sub-heading2 mb-3">Quick Navigation</h2>
+
+            <p class="mb-md-5 mb-4 fs-20 text-secondary">
+               Access key areas of your account instantly.
+            </p>
+            <div class="row gy-4">
+               <div class="col-md-4 col-sm-6 d-grid">
+                  <div
+                     class="border rounded-12 p-lg-5 p-4 light-bg text-center"
+                  >
+                     <img src="./img/icon/ic-funds.svg" alt="Fund Icon" />
+                     <h5 class="fs-24 py-1 mt-2 mb-lg-3">Deposit Funds</h5>
+                     <p class="text-secondary mb-0">
+                        Top up using Stripe or Crypto
+                     </p>
+                  </div>
+               </div>
+
+               <div class="col-md-4 col-sm-6 d-grid">
+                  <div
+                     class="border rounded-12 p-lg-5 p-4 light-bg text-center"
+                  >
+                     <img
+                        src="./img/icon/ic-withdraw.svg"
+                        alt="Withdraw Icon"
+                     />
+                     <h5 class="fs-24 py-1 mt-2 mb-lg-3">Withdraw Earnings</h5>
+                     <p class="text-secondary mb-0">
+                        Transfer balance to your bank or wallet
+                     </p>
+                  </div>
+               </div>
+
+               <div class="col-md-4 col-sm-6 d-grid">
+                  <div
+                     class="border rounded-12 p-lg-5 p-4 light-bg text-center"
+                  >
+                     <img src="./img/icon/ic-servers.svg" alt="Servers Icon" />
+                     <h5 class="fs-24 py-1 mt-2 mb-lg-3">View Servers</h5>
+                     <p class="text-secondary mb-0">
+                        See your rented GPUs and performance
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Quick Navigation Section End -->
+
+      <!-- Pro Tip Section Start -->
+      <section class="section-py blur-lines-bg">
+         <div class="max-w px-sm-4 px-3">
+            <div
+               class="d-sm-flex gap-4 align-items-center justify-content-between py-5 px-4 rounded-5"
+               style="background: #defcb554"
+            >
+               <div class="d-flex gap-2 align-items-center">
+                  <img src="./img/icon/ic-updates.svg" alt="Updates Icon" />
+                  <h6 class="fs-20 fw-normal mb-0">
+                     Pro Tip: You can add multiple GPUs to boost your income
+                     faster.
+                  </h6>
+               </div>
+               <div class="d-flex gap-2 align-items-center mt-sm-0 mt-4">
+                  <button
+                     type="button"
+                     class="btn fw-semibold primary-btn-md px-lg-5 px-4 text-nowrap"
+                  >
+                     Learn How
+                  </button>
+                  <img src="./img/icon/ic-close.svg" alt="Close Icon" />
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Pro Tip Section End -->
+
+      <!-- Footer Section Start -->
+      <section class="pt-5 pb-md-5 pb-4 blur-lines-bg">
+         <div class="max-w px-sm-4 px-3">
+            <div class="row gy-4">
+               <div class="col-md-5 col-sm-4">
+                  <a
+                     class="navbar-brand fw-bold fs-2 primary-text me-0"
+                     href="#"
+                     >LOGO</a
+                  >
+
+                  <div class="d-flex gap-2 align-items-center mt-md-4 mt-3">
+                     <a href="#" class="text-decoration-none">
+                        <img
+                           src="./img/icon/ic-discord.svg"
+                           alt="Social Icon"
+                        />
+                     </a>
+                     <a href="#" class="text-decoration-none">
+                        <img
+                           src="./img/icon/ic-youtube.svg"
+                           alt="Social Icon"
+                        />
+                     </a>
+                     <a href="#" class="text-decoration-none">
+                        <img
+                           src="./img/icon/ic-linkedin.svg"
+                           alt="Social Icon"
+                        />
+                     </a>
+                  </div>
+               </div>
+
+               <div class="col-md-3 col-sm-4 col-6">
+                  <h6 class="fs-24 mb-3">Products</h6>
+                  <ul class="list-unstyled">
+                     <li class="mb-2">
+                        <a href="#" class="text-unset text-decoration-none"
+                           >Server Catalogue</a
+                        >
+                     </li>
+                     <li class="mb-2">
+                        <a href="#" class="text-unset text-decoration-none"
+                           >Dashboard</a
+                        >
+                     </li>
+                     <li>
+                        <a href="#" class="text-unset text-decoration-none"
+                           >Plans</a
+                        >
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="col-md-3 col-sm-4 col-6">
+                  <h6 class="fs-24 mb-3">Company</h6>
+                  <ul class="list-unstyled">
+                     <li class="mb-2">
+                        <a
+                           href="./about-us.html"
+                           class="text-unset text-decoration-none"
+                           >About</a
+                        >
+                     </li>
+                     <li class="mb-2">
+                        <a href="#" class="text-unset text-decoration-none"
+                           >Contact</a
+                        >
+                     </li>
+                     <li>
+                        <a
+                           href="./help.html"
+                           class="text-unset text-decoration-none"
+                           >Help</a
+                        >
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <hr />
+
+            <div
+               class="d-flex gap-3 align-items-center justify-content-between flex-md-row flex-column"
+            >
+               <p class="mb-0 text-secondary text-sm-start text-center">
+                  © 2025 Mottif AI. Empowering digital income through GPU power.
+               </p>
+
+               <div class="d-flex align-items-center gap-3">
+                  <a href="#" class="text-secondary small text-nowrap"
+                     >Privacy Policy</a
+                  >
+                  <a href="#" class="text-secondary small text-nowrap"
+                     >Cookie Policy</a
+                  >
+                  <a href="#" class="text-secondary small text-nowrap"
+                     >Terms of use</a
+                  >
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer Section End -->
+
+      <!-- Page Loader Start -->
+      <!-- <div
+         id="page-loader"
+         class="position-fixed top-0 start-0 w-100 min-vh-100 bg-white d-flex justify-content-center align-items-center"
+         style="z-index: 9999"
+      >
+         <div class="dot-loader d-flex gap-1">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+         </div>
+      </div> -->
+      <!-- Page Loader End -->
+      <!-- JavaScript Scripts -->
+      <script src="./js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"></script>
+   </body>
+</html>

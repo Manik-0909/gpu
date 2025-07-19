@@ -399,6 +399,29 @@ header .nav-item .nav-link.active {
    }
 }
 
+/* Dashboard CSS */
+.profile-dropdown .dropdown-menu[data-bs-popper] {
+   left: -70px;
+}
+
+.dashboard-header .nav-item .nav-link {
+   font-weight: 500;
+   color: var(--secondary-color);
+   border-radius: 8px;
+   padding: 8px 12px;
+   width: fit-content;
+}
+
+.dashboard-header .nav-item .nav-link:hover {
+   color: var(--secondary-color);
+   background: var(--primary-color);
+}
+
+.dashboard-header .nav-item .nav-link.active {
+   color: var(--secondary-color);
+   background: var(--primary-color);
+}
+
 /* Media Queries */
 @media only screen and (max-width: 992px) {
    .main-heading {
@@ -461,6 +484,10 @@ header .nav-item .nav-link.active {
    .cta-sec,
    .middle-cta {
       padding-block: 80px;
+   }
+
+   .profile-dropdown .dropdown-menu[data-bs-popper] {
+      left: 0;
    }
 }
 
