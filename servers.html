@@ -82,13 +82,19 @@
                               </a>
                            </li>
                            <li class="nav-item pe-lg-2">
-                              <a class="nav-link" href="#">Deposit</a>
+                              <a class="nav-link" href="./deposit.html"
+                                 >Deposit</a
+                              >
                            </li>
                            <li class="nav-item pe-lg-2">
-                              <a class="nav-link" href="#">Withdraw</a>
+                              <a class="nav-link" href="./withdraw.html"
+                                 >Withdraw</a
+                              >
                            </li>
                            <li class="nav-item">
-                              <a class="nav-link" href="#">Earnings</a>
+                              <a class="nav-link" href="./earnings.html"
+                                 >Earnings</a
+                              >
                            </li>
                         </ul>
                         <div
@@ -115,12 +121,27 @@
                               </button>
                               <ul class="dropdown-menu">
                                  <li>
-                                    <a class="dropdown-item" href="#"
-                                       >Profile</a
+                                    <a
+                                       class="dropdown-item small fw-medium"
+                                       href="./edit-profile.html"
+                                       >Edit Profile</a
                                     >
                                  </li>
+
                                  <li>
-                                    <a class="dropdown-item" href="#"
+                                    <a
+                                       class="dropdown-item small fw-medium"
+                                       href="./referral.html"
+                                       >Referral Centre</a
+                                    >
+                                 </li>
+
+                                 <hr class="my-1" />
+
+                                 <li>
+                                    <a
+                                       class="dropdown-item text-danger small fw-semibold"
+                                       href="./login.html"
                                        >Log Out</a
                                     >
                                  </li>
@@ -135,121 +156,421 @@
       </div>
       <!-- Header Section End -->
 
-      <!-- Welcome Section Start -->
-      <section
-         class="section-py blur-lines-bg position-relative overflow-hidden"
-      >
+      <!-- My Servers Section Start -->
+      <section class="section-py position-relative overflow-hidden">
          <div class="max-w px-sm-4 px-3">
-            <div
-               class="p-lg-5 p-4 rounded-5 box-shadow2 mb-5"
-               style="background-color: #ffffffa3"
-            >
-               <h2 class="fw-semibold sub-heading2 mb-3">
-                  Welcome back, Uzma!
-               </h2>
+            <div>
+               <h2 class="fw-semibold sub-heading1">My Servers</h2>
 
                <p class="mb-0 fs-20 text-secondary">
                   Here’s what’s happening in your account today.
                </p>
-            </div>
 
-            <div class="row gy-4">
-               <div class="col-sm-6 d-grid">
+               <div
+                  class="d-flex mt-32 mb-5 align-items-lg-center align-items-end justify-content-between gap-3 flex-lg-row flex-column"
+               >
                   <div
-                     class="bg-white rounded-12 border-top border-5 border-black p-md-5 p-4"
+                     class="d-flex gap-2 align-items-center justify-content-sm-start justify-content-end flex-sm-nowrap flex-wrap"
                   >
-                     <div
-                        class="sub-heading3 d-flex align-items-center gap-2 lh-sm"
-                     >
-                        <img
-                           src="./img/icon/ic-money.svg"
-                           alt="Money Icon"
-                           class="pe-1"
-                        />
-                        This Month’s Earnings
+                     <div class="dropdown">
+                        <button
+                           class="btn fw-medium primary-bg border-0 rounded-pill px-3 py-2 d-flex align-items-center gap-1"
+                           type="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false"
+                        >
+                           Status: All
+
+                           <img
+                              src="./img/icon/ic-dropdown.svg"
+                              alt="Dropdown Icon"
+                           />
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li>
+                              <a class="dropdown-item small fw-medium" href="#"
+                                 >Lorem1
+                              </a>
+                           </li>
+
+                           <li>
+                              <a class="dropdown-item small fw-medium" href="#"
+                                 >Lorem2
+                              </a>
+                           </li>
+                        </ul>
                      </div>
 
-                     <h2 class="fw-semibold mt-4 mb-3 sub-heading1">$482.00</h2>
-                     <p class="mb-0 text-secondary">Updated: July 12, 2025</p>
+                     <div class="dropdown">
+                        <button
+                           class="btn fw-medium primary-bg border-0 rounded-pill px-3 py-2 d-flex align-items-center gap-1"
+                           type="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false"
+                        >
+                           Location: All
+
+                           <img
+                              src="./img/icon/ic-dropdown.svg"
+                              alt="Dropdown Icon"
+                           />
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li>
+                              <a class="dropdown-item small fw-medium" href="#"
+                                 >Lorem1
+                              </a>
+                           </li>
+
+                           <li>
+                              <a class="dropdown-item small fw-medium" href="#"
+                                 >Lorem2
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div class="dropdown">
+                        <button
+                           class="btn fw-medium primary-bg border-0 rounded-pill px-3 py-2 d-flex align-items-center gap-1"
+                           type="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false"
+                        >
+                           Sort by: ROI
+
+                           <img
+                              src="./img/icon/ic-dropdown.svg"
+                              alt="Dropdown Icon"
+                           />
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li>
+                              <a class="dropdown-item small fw-medium" href="#"
+                                 >Lorem1
+                              </a>
+                           </li>
+
+                           <li>
+                              <a class="dropdown-item small fw-medium" href="#"
+                                 >Lorem2
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div
+                     class="d-flex gap-2 align-items-center justify-content-sm-start justify-content-end flex-sm-nowrap flex-wrap"
+                  >
+                     <button
+                        class="btn fw-medium primary-bg border-0 rounded-pill px-3 py-2"
+                     >
+                        Search by server name or ID
+                     </button>
+                     <button
+                        class="btn fw-medium primary-bg border-0 rounded-pill px-3 py-2 d-flex align-items-center gap-2"
+                     >
+                        <img
+                           src="./img/icon/ic-round-plus.svg"
+                           alt="Add Icon"
+                        />
+                        Rent New server
+                     </button>
                   </div>
                </div>
 
-               <div class="col-sm-6 d-grid">
-                  <div
-                     class="bg-white rounded-12 border-top border-5 border-black p-md-5 p-4"
-                  >
-                     <div class="sub-heading3 d-flex align-items-center gap-2">
-                        <img
-                           src="./img/icon/ic-servers-primary.svg"
-                           alt="Server Icon"
-                           class="pe-1"
-                        />
-                        Active Servers
-                     </div>
+               <div>
+                  <div class="table-responsive servers-table">
+                     <table class="table mb-1">
+                        <thead>
+                           <tr>
+                              <th
+                                 scope="col"
+                                 class="p-4 text-nowrap bg-light rounded-top-5 rounded-end-0"
+                              >
+                                 <div>
+                                    <h6 class="fs-20 fw-bold mb-1">
+                                       QUANTUM GRID
+                                    </h6>
+                                    <p class="mb-0 fw-normal">3 x RTX 5090</p>
+                                    <p class="small fw-normal mb-0">
+                                       #srv-32491
+                                    </p>
+                                 </div>
+                              </th>
+                              <th
+                                 scope="col"
+                                 class="fw-semibold p-4 text-nowrap bg-light"
+                              ></th>
+                              <th
+                                 scope="col"
+                                 class="fw-semibold p-4 bg-light"
+                              ></th>
+                              <th
+                                 scope="col"
+                                 class="fw-semibold p-4 bg-light"
+                              ></th>
+                              <th
+                                 scope="col"
+                                 class="fw-semibold p-4 text-nowrap bg-light rounded-top-5 rounded-start-0"
+                              >
+                                 <div
+                                    class="d-flex justify-content-end align-items-center"
+                                 >
+                                    <div
+                                       class="primary-bg d-flex px-3 py-1 align-items-center w-fit gap-2 rounded-pill fw-medium"
+                                    >
+                                       <div
+                                          class="p-1 bg-success rounded-12 w-fit border"
+                                       ></div>
+                                       Active
+                                    </div>
+                                 </div>
+                              </th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td class="text-secondary text-nowrap p-4">
+                                 <div>
+                                    <h6 class="mb-1 fw-normal text-uppercase">
+                                       RENTED ON
+                                    </h6>
+                                    <p class="mb-0 fw-bold text-black">
+                                       July 1, 2025
+                                    </p>
+                                 </div>
+                              </td>
 
-                     <h2 class="fw-semibold mt-4 mb-3 sub-heading1">4</h2>
-                     <p class="mb-0 text-secondary">Fully operational</p>
+                              <td class="text-secondary text-nowrap p-4">
+                                 <div>
+                                    <h6 class="mb-1 fw-normal text-uppercase">
+                                       EARNINGS TO DATE
+                                    </h6>
+                                    <p class="mb-0 fw-bold text-black">
+                                       $248.00
+                                    </p>
+                                 </div>
+                              </td>
+
+                              <td class="text-secondary text-nowrap p-4">
+                                 <div>
+                                    <h6 class="mb-1 fw-normal text-uppercase">
+                                       est.monthly roi
+                                    </h6>
+                                    <p class="mb-0 fw-bold text-black">
+                                       $248.00
+                                    </p>
+                                 </div>
+                              </td>
+
+                              <td class="text-secondary text-nowrap p-4">
+                                 <div>
+                                    <h6 class="mb-1 fw-normal text-uppercase">
+                                       payout date
+                                    </h6>
+                                    <p class="mb-0 fw-bold text-black">
+                                       Aug 1, 2025
+                                    </p>
+                                 </div>
+                              </td>
+                              <td
+                                 class="text-secondary text-nowrap p-4 text-end"
+                              >
+                                 <div>
+                                    <h6 class="mb-1 fw-normal text-uppercase">
+                                       setup location
+                                    </h6>
+                                    <p class="mb-0 fw-bold text-black">
+                                       Iceland - Tier 3
+                                    </p>
+                                 </div>
+                              </td>
+                           </tr>
+
+                           <tr>
+                              <td class="p-4 text-nowrap" colspan="5">
+                                 <div
+                                    class="d-flex gap-2 justify-content-end align-items-center mb-4"
+                                 >
+                                    <button
+                                       class="btn fw-medium primary-bg border-0 rounded-pill px-3 py-1"
+                                    >
+                                       Extend Server
+                                    </button>
+
+                                    <button
+                                       class="btn fw-medium bg-secondary text-white border-0 rounded-pill px-3 py-1"
+                                    >
+                                       Upgrade Plan
+                                    </button>
+
+                                    <button
+                                       class="btn fw-medium bg-secondary text-white border-0 rounded-pill px-3 py-1"
+                                    >
+                                       View Details
+                                    </button>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+
+                  <div class="table-responsive servers-table -translate-y-26">
+                     <table class="table mb-1">
+                        <thead>
+                           <tr>
+                              <th
+                                 scope="col"
+                                 class="p-4 text-nowrap bg-light rounded-top-5 rounded-end-0"
+                              >
+                                 <div>
+                                    <h6 class="fs-20 fw-bold mb-1">
+                                       QUANTUM GRID
+                                    </h6>
+                                    <p class="mb-0 fw-normal">3 x RTX 5090</p>
+                                    <p class="small fw-normal mb-0">
+                                       #srv-32491
+                                    </p>
+                                 </div>
+                              </th>
+                              <th
+                                 scope="col"
+                                 class="fw-semibold p-4 text-nowrap bg-light"
+                              ></th>
+                              <th
+                                 scope="col"
+                                 class="fw-semibold p-4 bg-light"
+                              ></th>
+                              <th
+                                 scope="col"
+                                 class="fw-semibold p-4 bg-light"
+                              ></th>
+                              <th
+                                 scope="col"
+                                 class="fw-semibold p-4 text-nowrap bg-light rounded-top-5 rounded-start-0"
+                              >
+                                 <div
+                                    class="d-flex justify-content-end align-items-center"
+                                 >
+                                    <div
+                                       class="bg-orange d-flex px-3 py-1 align-items-center w-fit gap-2 rounded-pill fw-medium"
+                                    >
+                                       <div
+                                          class="p-1 bg-warning rounded-12 w-fit border"
+                                       ></div>
+                                       Pending Setup
+                                    </div>
+                                 </div>
+                              </th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td class="text-secondary text-nowrap p-4">
+                                 <div>
+                                    <h6 class="mb-1 fw-normal text-uppercase">
+                                       RENTED ON
+                                    </h6>
+                                    <p class="mb-0 fw-bold text-black">
+                                       July 1, 2025
+                                    </p>
+                                 </div>
+                              </td>
+
+                              <td class="text-secondary text-nowrap p-4">
+                                 <div>
+                                    <h6 class="mb-1 fw-normal text-uppercase">
+                                       EARNINGS TO DATE
+                                    </h6>
+                                    <p class="mb-0 fw-bold text-black">
+                                       $248.00
+                                    </p>
+                                 </div>
+                              </td>
+
+                              <td class="text-secondary text-nowrap p-4">
+                                 <div>
+                                    <h6 class="mb-1 fw-normal text-uppercase">
+                                       est.monthly roi
+                                    </h6>
+                                    <p class="mb-0 fw-bold text-black">
+                                       $248.00
+                                    </p>
+                                 </div>
+                              </td>
+
+                              <td class="text-secondary text-nowrap p-4">
+                                 <div>
+                                    <h6 class="mb-1 fw-normal text-uppercase">
+                                       payout date
+                                    </h6>
+                                    <p class="mb-0 fw-bold text-black">
+                                       Aug 1, 2025
+                                    </p>
+                                 </div>
+                              </td>
+                              <td
+                                 class="text-secondary text-nowrap p-4 text-end"
+                              >
+                                 <div>
+                                    <h6 class="mb-1 fw-normal text-uppercase">
+                                       setup location
+                                    </h6>
+                                    <p class="mb-0 fw-bold text-black">
+                                       Iceland - Tier 3
+                                    </p>
+                                 </div>
+                              </td>
+                           </tr>
+
+                           <tr>
+                              <td class="p-4 text-nowrap" colspan="5">
+                                 <div
+                                    class="d-flex gap-2 justify-content-end align-items-center mb-4"
+                                 >
+                                    <button
+                                       class="btn fw-medium bg-secondary text-white border-0 rounded-pill px-3 py-1"
+                                    >
+                                       Upgrade Plan
+                                    </button>
+
+                                    <button
+                                       class="btn fw-medium bg-secondary text-white border-0 rounded-pill px-3 py-1"
+                                    >
+                                       View Details
+                                    </button>
+
+                                    <button
+                                       class="btn fw-medium bg-danger text-white border-0 rounded-pill px-3 py-1 d-flex gap-2 align-items-center"
+                                    >
+                                       <div
+                                          class="p-1 bg-danger rounded-12 w-fit border"
+                                       ></div>
+                                       Extend Server
+                                    </button>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
                   </div>
                </div>
             </div>
          </div>
 
          <!-- Background Effect Shapes -->
-         <div class="bg-effect-right top-50 start-50" style="z-index: -1"></div>
+         <div
+            class="bg-effect-right top-50 opacity-50 start-0"
+            style="z-index: -1"
+         ></div>
+         <div
+            class="bg-effect-right top-50 end-0 opacity-50"
+            style="z-index: -1"
+         ></div>
       </section>
-      <!-- Welcome Section End -->
-
-      <!-- Quick Navigation Section Start -->
-      <section class="section-py lines-bg">
-         <div class="max-w px-sm-4 px-3">
-            <h2 class="fw-semibold sub-heading2 mb-3">Quick Navigation</h2>
-
-            <p class="mb-md-5 mb-4 fs-20 text-secondary">
-               Access key areas of your account instantly.
-            </p>
-            <div class="row gy-4">
-               <div class="col-md-4 col-sm-6 d-grid">
-                  <div
-                     class="border rounded-12 p-lg-5 p-4 light-bg text-center"
-                  >
-                     <img src="./img/icon/ic-funds.svg" alt="Fund Icon" />
-                     <h5 class="fs-24 py-1 mt-2 mb-lg-3">Deposit Funds</h5>
-                     <p class="text-secondary mb-0">
-                        Top up using Stripe or Crypto
-                     </p>
-                  </div>
-               </div>
-
-               <div class="col-md-4 col-sm-6 d-grid">
-                  <div
-                     class="border rounded-12 p-lg-5 p-4 light-bg text-center"
-                  >
-                     <img
-                        src="./img/icon/ic-withdraw.svg"
-                        alt="Withdraw Icon"
-                     />
-                     <h5 class="fs-24 py-1 mt-2 mb-lg-3">Withdraw Earnings</h5>
-                     <p class="text-secondary mb-0">
-                        Transfer balance to your bank or wallet
-                     </p>
-                  </div>
-               </div>
-
-               <div class="col-md-4 col-sm-6 d-grid">
-                  <div
-                     class="border rounded-12 p-lg-5 p-4 light-bg text-center"
-                  >
-                     <img src="./img/icon/ic-servers.svg" alt="Servers Icon" />
-                     <h5 class="fs-24 py-1 mt-2 mb-lg-3">View Servers</h5>
-                     <p class="text-secondary mb-0">
-                        See your rented GPUs and performance
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Quick Navigation Section End -->
+      <!-- My Servers Section End -->
 
       <!-- Pro Tip Section Start -->
       <section class="section-py blur-lines-bg">
@@ -317,7 +638,7 @@
                   <ul class="list-unstyled">
                      <li class="mb-2">
                         <a
-                           href="./servers.html"
+                           href="./catalogue.html"
                            class="text-unset text-decoration-none"
                            >Server Catalogue</a
                         >
@@ -330,7 +651,9 @@
                         >
                      </li>
                      <li>
-                        <a href="#" class="text-unset text-decoration-none"
+                        <a
+                           href="./catalogue-details.html"
+                           class="text-unset text-decoration-none"
                            >Plans</a
                         >
                      </li>
@@ -389,7 +712,7 @@
       <!-- Footer Section End -->
 
       <!-- Page Loader Start -->
-      <!-- <div
+      <div
          id="page-loader"
          class="position-fixed top-0 start-0 w-100 min-vh-100 bg-white d-flex justify-content-center align-items-center"
          style="z-index: 9999"
@@ -399,7 +722,7 @@
             <div class="dot"></div>
             <div class="dot"></div>
          </div>
-      </div> -->
+      </div>
       <!-- Page Loader End -->
       <!-- JavaScript Scripts -->
       <script src="./js/main.js"></script>
