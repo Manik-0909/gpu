@@ -55,6 +55,12 @@ body {
    -webkit-text-fill-color: transparent;
 }
 
+.included-cards:hover {
+   background: var(--primary-color60) !important;
+   transition: all 0.5s;
+   cursor: pointer;
+}
+
 .main-heading.text-secondary {
    -webkit-text-fill-color: unset;
    color: var(--dark-gray-color) !important;
